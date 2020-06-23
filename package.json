@@ -1,0 +1,49 @@
+{
+  "name": "@armathai/phaser2-grid",
+  "version": "1.0.0",
+  "description": "Phaser2 Grid System",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "start": "npx parcel src/__examples__/index.html",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build --scripts-prepend-node-path",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "repository": {
+    "url": "git@github.com:armathai/phaser2-grid.git"
+  },
+  "keywords": [
+    "Phaser2",
+    "Phaser",
+    "grid"
+  ],
+  "author": "Armathai LLC",
+  "license": "MIT",
+  "homepage": "https://github.com/armathai/phaser2-grid#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
+    "jest": "^25.1.0",
+    "jest-canvas-mock": "^2.2.0",
+    "parcel-bundler": "^1.12.4",
+    "phaser-ce": "^2.9.4",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4",
+    "utf-8-validate": "^5.0.2"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@armathai/grid-core": "^1.0.1"
+  }
+}

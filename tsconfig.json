@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["ESNext", "dom"],
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["node_modules/phaser-ce/typescript/phaser.d.ts"],
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
