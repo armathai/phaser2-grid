@@ -1,6 +1,6 @@
 {
   "name": "@armathai/phaser2-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Phaser2 Grid System",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
