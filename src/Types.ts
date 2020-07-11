@@ -3,6 +3,7 @@ import { ICellConfig } from '@armathai/grid-core';
 export type IPhaser2Child = PIXI.DisplayObjectContainer & {
   destroy(...args: any[]): void;
   resize?(width: number, height: number): void;
+  postBuild?(): void;
 };
 
 export type IPhaser2Grid = IPhaser2Child & {

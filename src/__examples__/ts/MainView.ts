@@ -65,17 +65,14 @@ export class MainView extends Phaser2Grid {
 class ChildView extends Phaser2Grid {
   constructor(game: Phaser.Game) {
     super(game);
-
-    this.build(this.getGridConfig());
+    super.build(this.getGridConfig());
   }
 
   public getGridConfig() {
     return getChildViewGridConfig();
   }
 
-  public build(config: ICellConfig): void {
-    super.build(config);
-
+  public postBuild(): void {
     const owl = this.game.make.sprite(0, 0, 'owl');
     owl.anchor.set(0.5);
 

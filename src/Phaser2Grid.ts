@@ -60,6 +60,10 @@ export abstract class Phaser2Grid extends Phaser.Group implements IPhaser2Grid {
     this._patchChildDestroy(child, cellName);
     this._rebuildContent(cellName, child);
 
+    if (child.postBuild !== undefined) {
+      child.postBuild();
+    }
+
     this._debug.bringToTop();
 
     return this;
